@@ -1,19 +1,16 @@
-html,
-body,
-div {
-  height: 100%;
+html, body, div {
+    height: 100%;
 }
 
 textarea {
-  height: 70%;
-  width: 30%
+    height: 70%;
+    width: 30%;
 }
 
-h1,
-a {
-  color: gray;
+h1, a {
+    color: gray;
 }
 
 a {
-  text-decoration: none;
+    text-decoration: none;
 }
