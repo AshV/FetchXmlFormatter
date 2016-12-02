@@ -4,6 +4,10 @@ var jsTxt = document.querySelector("#js");
 
 srcTxt.onkeyup = function () {
     var srcValue = new String();
+    if (srcTxt.value.trim() === "") {
+        csTxt.value = "";
+        jsTxt.value = "";
+    }
     srcTxt.value.trim().replace(/"/g, "'").split('\n').forEach(function (line) {
         if (line.length > 0) {
             if (line[0] == '+')

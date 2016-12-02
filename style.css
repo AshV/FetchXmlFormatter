@@ -5,6 +5,10 @@ html, body, div {
 textarea {
     height: 70%;
     width: 30%;
+    background-color: azure;
+    border: gray 1px solid;
+    color: #000000;
+    cursor: default;
 }
 
 h1, a {
