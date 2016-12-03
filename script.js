@@ -1,3 +1,5 @@
+new Clipboard('.btn');
+
 var srcTxt = document.querySelector("#src");
 var csTxt = document.querySelector("#cs");
 var jsTxt = document.querySelector("#js");

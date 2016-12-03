@@ -7,6 +7,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "FetchXmlFormatter", "FetchX
 	ProjectSection(SolutionItems) = preProject
 		clipboard.min.js = clipboard.min.js
 		index.html = index.html
+		milligram.min.css = milligram.min.css
 		script.js = script.js
 		style.css = style.css
 	EndProjectSection
