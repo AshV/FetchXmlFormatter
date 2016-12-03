@@ -2,13 +2,15 @@ html, body, div {
     height: 100%;
 }
 
-textarea {
+.txtCon {
+    float: left;
     height: 70%;
-    width: 30%;
-    background-color: azure;
-    border: gray 1px solid;
-    color: #000000;
-    cursor: default;
+    width: 33%;
+}
+
+textarea {
+    height: 90%;
+    width: 100%;
 }
 
 h1, a {

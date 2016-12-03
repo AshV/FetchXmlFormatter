@@ -5,6 +5,7 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "FetchXmlFormatter", "FetchXmlFormatter", "{6B416B8C-B55F-4D2E-824E-33858D0E5FDB}"
 	ProjectSection(SolutionItems) = preProject
+		clipboard.min.js = clipboard.min.js
 		index.html = index.html
 		script.js = script.js
 		style.css = style.css
