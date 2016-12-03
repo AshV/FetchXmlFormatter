@@ -1,5 +1,3 @@
-new Clipboard('.btn');
-
 var srcTxt = document.querySelector("#src");
 var csTxt = document.querySelector("#cs");
 var jsTxt = document.querySelector("#js");
@@ -11,7 +9,7 @@ srcTxt.onkeyup = function () {
         jsTxt.value = "";
     }
     srcTxt.value.trim().replace(/"/g, "'").split('\n').forEach(function (line) {
-        if (line.length > 0) {
+        if (line.length > 0 && line.trim().length > 0) {
             if (line[0] == '+')
             { }
             else {

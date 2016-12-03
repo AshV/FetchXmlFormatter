@@ -1,22 +1,16 @@
-html, body, div {
-    height: 100%;
-}
-
-.txtCon {
-    float: left;
-    height: 70%;
-    width: 33%;
+html, body {
+    height: 98%;
+    width: 99%;
 }
 
 textarea {
-    height: 90%;
-    width: 100%;
+    height: 98%;
 }
 
-h1, a {
-    color: gray;
+h1 {
+    line-height: 50%;
 }
 
-a {
-    text-decoration: none;
+.row {
+    height: 50%;
 }
