@@ -1,12 +1,14 @@
 var srcTxt = document.querySelector("#src");
 var csTxt = document.querySelector("#cs");
 var jsTxt = document.querySelector("#js");
+var jsLintTxt = document.querySelector("#jsLint");
 
 srcTxt.onkeyup = function () {
     var srcValue = new String();
     if (srcTxt.value.trim() === "") {
         csTxt.value = "";
         jsTxt.value = "";
+        jsLintTxt.value = "";
     }
     srcTxt.value.trim().replace(/"/g, "'").split('\n').forEach(function (line) {
         if (line.length > 0 && line.trim().length > 0) {
@@ -30,4 +32,9 @@ var format = function (srcValue) {
         jstxt += '"' + line + '"+\n';
     });
     jsTxt.value = jstxt.substring(0, jstxt.length - 6);
+    var jslinttxt = "var fetchXML = new String();\n";
+    srcValue.split('\n').forEach(function (line) {
+        jslinttxt += 'fetchXML += ' + '"' + line + '";\n';
+    });
+    jsLintTxt.value = jslinttxt.substring(0, jslinttxt.length - 18) + ";";
 };
