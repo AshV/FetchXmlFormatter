@@ -38,3 +38,18 @@ var format = function (srcValue) {
     });
     jsLintTxt.value = jslinttxt.substring(0, jslinttxt.length - 18) + ";";
 };
+
+function copied() {
+    this.parentElement.dataset.balloon = "Copied!";
+};
+
+function restoreCopied() {
+    this.parentElement.dataset.balloon = "Click To Copy.";
+};
+
+csTxt.onclick = copied;
+csTxt.onmouseout = restoreCopied;
+jsTxt.onclick = copied;
+jsTxt.onmouseout = restoreCopied;
+jsLintTxt.onclick = copied;
+jsLintTxt.onmouseout = restoreCopied;

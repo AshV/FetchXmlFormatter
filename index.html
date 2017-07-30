@@ -8,17 +8,13 @@
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" type="text/css" href="milligram.min.css" />
     <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="balloon.min.css" />
 </head>
 <body>
-    <div class="row" style="position:relative">
-        <div class="column column-75">
-            <textarea id="src" placeholder="Paste your fetchXML here." wrap="off"></textarea>
-        </div>
-        <div class="column column-25">
-            <a class="github-button" href="https://github.com/AshV/FetchXmlFormatter" data-icon="octicon-eye" data-style="mega" data-count-href="/AshV/FetchXmlFormatter/watchers" data-count-api="/repos/AshV/FetchXmlFormatter#subscribers_count" data-count-aria-label="# watchers on GitHub" aria-label="Watch AshV/FetchXmlFormatter on GitHub">Watch</a>
-            <a class="github-button" href="https://github.com/AshV/FetchXmlFormatter" data-icon="octicon-star" data-style="mega" data-count-href="/AshV/FetchXmlFormatter/stargazers" data-count-api="/repos/AshV/FetchXmlFormatter#stargazers_count" data-count-aria-label="# stargazers on GitHub" aria-label="Star AshV/FetchXmlFormatter on GitHub">Star</a>
-            <a class="github-button" href="https://github.com/AshV/FetchXmlFormatter/fork" data-icon="octicon-repo-forked" data-style="mega" data-count-href="/AshV/FetchXmlFormatter/network" data-count-api="/repos/AshV/FetchXmlFormatter#forks_count" data-count-aria-label="# forks on GitHub" aria-label="Fork AshV/FetchXmlFormatter on GitHub">Fork</a>
-            <a class="github-button" href="https://github.com/AshV" data-style="mega" data-count-href="/AshV/followers" data-count-api="/users/AshV#followers" data-count-aria-label="# followers on GitHub" aria-label="Follow @AshV on GitHub">Follow @AshishVishwakarma</a>
+    <div class="row" >
+        <div class="column column-25" style="position:relative">
+            <a class="github-button" href="https://github.com/AshV" data-size="large" data-show-count="true" aria-label="Follow @AshV on GitHub">Follow @AshV</a>
+            <a class="github-button" href="https://github.com/AshV/FetchXmlFormatter" data-icon="octicon-star" data-size="large" data-show-count="true" aria-label="Star AshV/FetchXmlFormatter on GitHub">Star</a>
             <h1></h1>
             <h1>&lt;fetchXml/&gt;</h1>
             <h1>&lt;formatter/&gt;</h1>
@@ -27,15 +23,30 @@
                 <a href="https://arunpotti.wordpress.com/2014/11/15/fetchxml-formatter-tool/" target="_blank" style="color:gray;">Inspired from Arun's CRM Blog</a>
             </div>
         </div>
+        <div class="column column-75">
+            <textarea id="src" placeholder="Paste your fetchXML here.
+
+&lt;fetch mapping=&apos;logical&apos;&gt;
+   &lt;entity name=&apos;account&apos;&gt; 
+      &lt;attribute name=&apos;accountid&apos;/&gt; 
+      &lt;attribute name=&apos;name&apos;/&gt; 
+      &lt;link-entity name=&apos;systemuser&apos; to=&apos;owninguser&apos;&gt; 
+         &lt;filter type=&apos;and&apos;&gt; 
+            &lt;condition attribute=&apos;lastname&apos; operator=&apos;ne&apos; value=&apos;Cannon&apos; /&gt; 
+          &lt;/filter&gt; 
+      &lt;/link-entity&gt; 
+   &lt;/entity&gt; 
+&lt;/fetch&gt;  " wrap="off"></textarea>
+        </div>
     </div>
     <div class="row">
-        <div class="column column-30">
+        <div class="column column-30" data-balloon="Click To Copy." data-balloon-pos="up">
             <textarea class="btn" data-clipboard-target="#cs" id="cs" placeholder="C# formatted syntax appears here." wrap="off" readonly></textarea>
         </div>
-        <div class="column column-30">
+        <div class="column column-30" data-balloon="Click To Copy." data-balloon-pos="up">
             <textarea class="btn" data-clipboard-target="#js" id="js" placeholder="JavaScript formatted syntax appears here." wrap="off" readonly></textarea>
         </div>
-        <div class="column column-30">
+        <div class="column column-30" data-balloon="Click To Copy." data-balloon-pos="up">
             <textarea class="btn" data-clipboard-target="#jsLint" id="jsLint" placeholder="JavaScript formatted JSlint safe syntax appears here." wrap="off" readonly></textarea>
         </div>
     </div>
