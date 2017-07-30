@@ -5,6 +5,7 @@ html, body {
 
 textarea {
     height: 98%;
+    resize: none;
 }
 
 h1 {
