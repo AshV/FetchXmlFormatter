@@ -3,7 +3,9 @@ Online tool for quick formatting of fetchXML in Dynamics CRM before using into C
 
 Use online here [FetchXml Formatter Tool online](https://www.ashishvishwakarma.com/FetchXmlFormatter/)
 
-IMAGE
+![](https://raw.githubusercontent.com/AshV/FetchXmlFormatter/master/Screenshots/ScreenShot1.PNG "Home Screen")
+
+![](https://raw.githubusercontent.com/AshV/FetchXmlFormatter/master/Screenshots/ScreenShot2.PNG "Formatted XML")
 
 Following libraries are used in this
 1. [Milligram CSS](https://github.com/milligram/milligram)
