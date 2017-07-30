@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 <head>
     <title>Fetch Xml Formatter Tool Online</title>
@@ -11,7 +11,7 @@
     <link rel="stylesheet" type="text/css" href="balloon.min.css" />
 </head>
 <body>
-    <div class="row" >
+    <div class="row">
         <div class="column column-25" style="position:relative">
             <a class="github-button" href="https://github.com/AshV" data-size="large" data-show-count="true" aria-label="Follow @AshV on GitHub">Follow @AshV</a>
             <a class="github-button" href="https://github.com/AshV/FetchXmlFormatter" data-icon="octicon-star" data-size="large" data-show-count="true" aria-label="Star AshV/FetchXmlFormatter on GitHub">Star</a>
@@ -27,15 +27,15 @@
             <textarea id="src" placeholder="Paste your fetchXML here.
 
 &lt;fetch mapping=&apos;logical&apos;&gt;
-   &lt;entity name=&apos;account&apos;&gt; 
-      &lt;attribute name=&apos;accountid&apos;/&gt; 
-      &lt;attribute name=&apos;name&apos;/&gt; 
-      &lt;link-entity name=&apos;systemuser&apos; to=&apos;owninguser&apos;&gt; 
-         &lt;filter type=&apos;and&apos;&gt; 
-            &lt;condition attribute=&apos;lastname&apos; operator=&apos;ne&apos; value=&apos;Cannon&apos; /&gt; 
-          &lt;/filter&gt; 
-      &lt;/link-entity&gt; 
-   &lt;/entity&gt; 
+   &lt;entity name=&apos;account&apos;&gt;
+      &lt;attribute name=&apos;accountid&apos;/&gt;
+      &lt;attribute name=&apos;name&apos;/&gt;
+      &lt;link-entity name=&apos;systemuser&apos; to=&apos;owninguser&apos;&gt;
+         &lt;filter type=&apos;and&apos;&gt;
+            &lt;condition attribute=&apos;lastname&apos; operator=&apos;ne&apos; value=&apos;Cannon&apos; /&gt;
+          &lt;/filter&gt;
+      &lt;/link-entity&gt;
+   &lt;/entity&gt;
 &lt;/fetch&gt;  " wrap="off"></textarea>
         </div>
     </div>
@@ -48,6 +48,9 @@
         </div>
         <div class="column column-30" data-balloon="Click To Copy." data-balloon-pos="up">
             <textarea class="btn" data-clipboard-target="#jsLint" id="jsLint" placeholder="JavaScript formatted JSlint safe syntax appears here." wrap="off" readonly></textarea>
+        </div>
+        <div style="bottom:0px; position:absolute;font-size:small;right:25px">
+            <b>FetchXml Formatter Online</b> hosted with <font color="red">❤</font> by <a href="https://github.com/AshV/FetchXmlFormatter">GitHub</a>
         </div>
     </div>
     <script src="script.js" type="text/javascript"></script>
