@@ -15,3 +15,19 @@ h1 {
 .row {
     height: 50%;
 }
+
+
+::-webkit-input-placeholder { /* Chrome */
+  color: #9b4dca;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: #9b4dca;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: #9b4dca;
+  opacity: 1;
+}
+:-moz-placeholder { /* Firefox 4 - 18 */
+  color: #9b4dca;
+  opacity: 1;
+}
