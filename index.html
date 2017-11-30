@@ -11,12 +11,21 @@
     <link rel="stylesheet" type="text/css" href="balloon.min.css" />
 </head>
 <body>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.11&appId=704915973052339';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
     <div class="row">
         <div class="column column-25" style="position:relative">
             <h1></h1>
             <h1>&lt;fetchXml<font color="#9b4dca">/</font>&gt;</h1>
             <h1>&lt;formatter<font color="#9b4dca">/</font>&gt;</h1>
             <h1>&lt;online<font color="#9b4dca">/</font>&gt;</h1>
+			<div class="fb-like" data-href="https://www.facebook.com/FetchXmlFormatterOnline/" data-layout="standard" data-action="recommend" data-size="large" data-show-faces="true" data-share="true"></div>
             <div style="bottom:0px; position:absolute;">
                 <a class="github-button" href="https://github.com/AshV" data-size="large" data-show-count="true" aria-label="Follow @AshV on GitHub">Follow @AshV</a>
                 <a class="github-button" href="https://github.com/AshV/FetchXmlFormatter" data-icon="octicon-star" data-size="large" data-show-count="true" aria-label="Star AshV/FetchXmlFormatter on GitHub">Star</a>
